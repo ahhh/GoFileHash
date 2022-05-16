@@ -25,8 +25,8 @@ var ignoreNames = []string{"Keychains", ".vmdk", ".vmem", ".npm", ".vscode", ".d
 
 func main() {
 
-	if len(os.Args) < 3 {
-		fmt.Println("./GoHash [directory to recursivly search] [out file]")
+	if len(os.Args) < 4 {
+		fmt.Println("./GoHash [directory to recursivly search] [out file] [hashing_algo]")
 	} else {
 		// First arg, the directory we will recursivly search
 		pathToDir := os.Args[1]
